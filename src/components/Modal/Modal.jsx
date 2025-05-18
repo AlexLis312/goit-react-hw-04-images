@@ -11,6 +11,7 @@ export const Modal = ({ largeImageURL, tags, onClose }) => {
     },
     [onClose]
   );
+
   useEffect(() => {
     window.addEventListener('keydown', handleKeyDown);
     return () => {
@@ -26,4 +27,3 @@ export const Modal = ({ largeImageURL, tags, onClose }) => {
     </div>
   );
 };
-// onClick={() => onClose(largeImageURL)}

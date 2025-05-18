@@ -4,6 +4,7 @@ import { HiOutlineSearch } from 'react-icons/hi';
 
 export const Searchbar = ({ onSubmit }) => {
   const { Searchbar, SearchForm, SearchFormButton, SearchFormInput } = styles;
+
   const handleSubmit = async ({ value }, actions) => {
     await onSubmit(value);
     actions.resetForm();
